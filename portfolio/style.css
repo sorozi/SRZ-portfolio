@@ -1,0 +1,125 @@
+
+body {
+    margin: 0;
+    padding: 0;
+    background: black;
+    color: white;
+
+    /* flagermus cursor */
+    cursor: url("bat-cursor.png"), auto;
+}
+
+
+/* mørkegrå tekstmarkering */
+::selection {
+    background: #272628;
+}
+
+
+/* HEADER */
+header {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+header h1 {
+    margin: 160px;
+    font-family: "Old English Text MT", serif;
+    font-size: 200px;
+}
+
+nav a {
+    margin: 20px;
+    padding: 20px 40px;
+    text-decoration: none;
+    font-family: "Algerian", serif;
+    font-size: 20px;
+    color: dimgrey;
+    border: 10px double #272628;
+    box-shadow: 4px 4px dimgrey;
+}
+
+nav a:hover {
+    background: #272628;
+    color: black;
+    border-color: black;
+
+    /* flagermus pointer */
+    cursor: url("bat-cursor.png"), pointer;
+}
+
+
+/* SECTIONS i egne bokse */
+section {
+    margin: 200px;
+    padding: 40px;
+    border: 10px double #272628;
+    box-shadow: 4px 4px dimgrey;
+    text-align: left;
+}
+
+section h2 {
+    margin-bottom: 40px;
+    text-align: center;
+    font-family: "Algerian", serif;
+    font-weight: normal;
+    font-size: 40px;
+    color: dimgrey;
+}
+
+
+/* PARAGRAPHS */
+p {
+    margin: 10px 0 20px 20px;
+    font-family: "Century Gothic", serif;
+    font-size: 20px;
+    color: #ccc;
+}
+
+
+/* LISTS */
+ul {
+    margin: 10px 0 10px 10px;
+}
+
+ul li {
+    margin-bottom: 10px;
+    padding-bottom: 20px;
+    padding-left: 10px;
+    font-family: "Century Gothic", serif;
+    font-size: 20px;
+    color: #ccc;
+}
+
+/* swapping bullet symbols */
+ul li::marker {
+    content: "✦";
+    color: white;
+}
+
+#education li strong {
+    display: block;
+    margin-top: 40px;
+    margin-bottom: 20px;
+    font-family: "Century Gothic", serif;
+    font-size: 24px;
+    color: dimgrey;
+}
+
+/* FOOTER */
+footer {
+    padding: 20px;
+    border-top: dashed white;
+
+}
+
+footer h2 {
+    margin-bottom: 40px;
+    text-align: center;
+    font-family: "Algerian", serif;
+    font-weight: normal;
+    font-size: 40px;
+    color: dimgrey;
+}
