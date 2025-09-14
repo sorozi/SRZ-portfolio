@@ -1,0 +1,133 @@
+/* BODY */
+body {
+    margin: 0;
+    padding: 0;
+
+    color: #ccc;
+    font-size: 18px; /* base font size */
+    font-family: "Palatino Linotype", serif;
+    line-height: 1.5;
+
+    background-image: url("lace.jpg");
+    background-size: cover;
+    background-attachment: fixed;
+
+    cursor: url("bat-cursor.png"), auto; /* flagermus cursor */
+}
+
+/* mørkegrå tekstmarkering */
+::selection {
+    background: #121212;
+}
+
+
+/* HEADER */
+header {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 2em 2em 6em; /* fleksibel spacing, undgår pixel værdier */
+}
+
+header h1 {
+    margin: 1em 0;
+    font-family: "Old English Text MT", serif;
+    font-size: 11.1em; /* 200 px */
+    line-height: 1;
+}
+
+
+/* NAVIGATION */
+nav a {
+    margin: 1.1em;
+    padding: 1.1em 2.2em;
+
+    text-decoration: none;
+    font-family: "Algerian", serif;
+    font-size: 1.1em; /* 20 px */
+    color: #ccc;
+
+    background: linear-gradient(90deg, #101010, black, #101010);
+    border: 0.55em double black; /* 10 px */
+    transition: all 0.2s ease;
+}
+
+nav a:hover {
+    background: linear-gradient(90deg, black, #303030, black);
+    color: black;
+    border-color: black;
+
+    cursor: url("bat-cursor.png"), pointer; /* flagermus curser/pointer */
+}
+
+
+/* SECTIONS */
+section {
+    margin: 11.1em; /* 200 px */
+    padding: 2.2em; /* 40 px */
+
+    border: 0.555em solid black;
+
+    background: linear-gradient(90deg, black, #303030, black);
+
+    text-align: left;
+
+    /* kunne klart være mere indbydende ... */
+}
+
+h2 {
+    margin: 1.1em;
+    text-align: center;
+    font-family: "Algerian", serif;
+    font-weight: normal;
+    font-size: 2.2em; /* 40 px */
+    color: #ccc;
+}
+
+
+/* PARAGRAPHS */
+#about p {
+    margin: 0.8em 0 1.6em 1.6em;
+}
+
+/* LISTS */
+ul {
+    margin: 0.8em 0 0.8em 0.8em;
+    padding-left: 1.6em;
+}
+
+ul li {
+    margin-bottom: 0.8em;
+    padding-bottom: 1.1em;
+    padding-left: 1.1em; /* afstand mellem tekst og bullet points */
+    font-size: 1em;
+    color: #ccc;
+}
+
+ul li::marker {
+    content: "✦"; /* swapping bullet symboler */
+    color: white;
+}
+
+#education li strong {
+    display: block;
+    margin-top: 2.2em;
+    margin-bottom: 1.1em;
+    font-size: 1.3em; /* 24 px */
+    color: #ccc;
+}
+
+
+/* FOOTER */
+footer {
+    padding: 1em; /* 18 px */
+    border-top: 0.2em solid #121212;
+    box-shadow: 0 0 4em #190202E5;
+    color: #888;
+    background: black;
+}
+
+
+/* (mangler media queries */
